@@ -1,4 +1,4 @@
-# Microbit Projects for [kodinn.is](http://krakkaruv.is/heimar/kodinn)
+# [Microbit](http://microbit.org/) Projects for [kodinn.is](http://krakkaruv.is/heimar/kodinn)
 These are projects made by students of University of Iceland, spring 2018.
 
 ## Projects
