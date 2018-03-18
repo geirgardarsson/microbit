@@ -5,6 +5,8 @@ These are projects made by students of University of Iceland, spring 2018.
 
 ### [asteroids](https://github.com/geirgardarsson/microbit/tree/master/loftsteinar)
 
+![](loftsteinar/imgs/asteroids.gif)
+
 ## Opening programs in browser
 
 * Download the hex file.
