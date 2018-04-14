@@ -2,17 +2,24 @@
 
 ![](imgs/asteroids.gif?raw=true)
 
+> Leikur: Stjórna geimskipi og forðast loftsteina sem koma á móti.
 
 ## &lt;Flokkar />
 
 Fyrir þetta verkefni þarf eftirfarandi flokka:
 
 ![](imgs/basic.png?raw=true)
+
 ![](imgs/led.png?raw=true)
+
 ![](imgs/logic.png?raw=true)
+
 ![](imgs/input.png?raw=true)
+
 ![](imgs/loops.png?raw=true)
+
 ![](imgs/math.png?raw=true)
+
 ![](imgs/variables.png?raw=true)
 
 ## &lt;Geimskip />
@@ -20,6 +27,8 @@ Fyrir þetta verkefni þarf eftirfarandi flokka:
 Byrjum á að gera breytur fyrir geimskipið okkar:
 
 ![](imgs/1-1.png?raw=true)
+
+> Þessar breytur eru fyrir staðsetninguna á skipinu okkar á tölvuskjánum. gx er staðsetningin á x-ásnum og gy er staðsetningin á y-ásnum
 
 Setjum svo geimskipið okkar í forerver-lykkjuna:
 
@@ -41,15 +50,21 @@ og kóðum svo takkana:
 
 ![](imgs/1-5.png?raw=true)
 
+> Þegar við ýtum á A og B þá lækkar og hækkar x-gildið á geimskipinu, eða: geimskipið fer til hægri og vinstri.
+
 If else setningarnar fyrir ofan láta skipið hreyfa sig í kringum skjáinn
 
 ![](imgs/1-6.gif?raw=true)
+
+> Til umhugsunar: Hvað eru clear screen og if-else blokkirnar að gera hér?
 
 ## &lt;Loftsteinn />
 
 Bætum við loftstein efst á borðið, undir Math(Stærðfræði) er hægt að velja random tölu:
 
 ![](imgs/1-7.png?raw=true)
+
+> Breyturnar y1 og x1 eru fyrir staðsetningu loftsteinsins, munið að 0 í y-gildi er efsta röðin á skjánum.
 
 Teiknum svo loftsteininn:
 
@@ -65,9 +80,13 @@ Bætum við í forever-lykkjuna, færum loftsteininn um 1 á y. Bætum líka vi�
 
 ![](imgs/10.png?raw=true)
 
+> Við pásum í hverju skrefi því annars vinnur talvan of hratt. Prófið að taka pásu-blokkina út til að prófa.
+
 ![](imgs/11.png?raw=true)
 
 ![](imgs/12.gif?raw=true)
+
+> Tilraun: Hvað gerist þegar hraðatalan (speed) er minnkuð? En hækkuð?
 
 Núna ætlum við að láta loftsteininn koma til baka á nýjum stað ef hann fer útaf skjánum.
 
@@ -83,7 +102,8 @@ Förum í logic og bætum þessu við í forever-lykkjuna okkar.
 
 ![](imgs/15.png?raw=true)
 
-Ef loftsteinninn og geimskipið eru á sama stað á bæði x og y þá er árekstur. Gerum sprengingu á skjáinn. (Aukadæmi: Gerið ykkar eigin útgáfu af sprengingunni!)
+Ef loftsteinninn og geimskipið eru á sama stað á bæði x og y þá er árekstur. Gerum sprengingu á skjáinn. 
+> Aukadæmi: Gerið ykkar eigin útgáfu af sprengingunni!
 
 ![](imgs/16.gif?raw=true)
 
@@ -93,7 +113,7 @@ Gerum breytu fyrir líf í on start:
 
 ![](imgs/17.png?raw=true)
 
-Bætum svo þessu við neðst í forever-lykkjuna:
+Bætum við virkni í áreksturinn þannig við missum líf, bætum svo við neðst í forever-lykkjuna að leikurinn klárist:
 
 ![](imgs/18.png?raw=true)
 
