@@ -290,3 +290,131 @@ Núna vantar bara að kalla á function sem bætir við en við þurfum að búa
 ## &lt; Sigur />
 
 Búið til function sem heitir bætaViðRunu. Í þessu functioni viljum við fyrst athuga hvort að notandinn sé búinn að klára 5 umferðir. Okkur vantar því eitthvað til að fylgjast með umferðunum. Búið til nýtt variable og nefnið það umferð. Skulum stilla umferðina sem 1 í byrjun. Dragið því “set item to 0 “ kubb eftst í byrjun og breytið item í umferð og 0 í 1.
+
+![](img/image68.png?raw=true)
+
+Ef umferð er jafnt og 5 þegar við förum í bæaVið fallið þá er leikmaðurinn búinn að vinna. Þá viljum við kalla á eitthvað fall sem lætur hann vita að hann hafi unnið. Búum því til en eitt fall og nefnum það sigur. Þar skulum við líka birta einhverja mynd. Skulum gera það samt aðeins skemmtilegra og láta sú mynd blikka nokkru sinnum áður en notandinn byrjar aftur. Farið því í Loops og veljið repeat 4 times do kubbinn og látið hann í sigur. Þið megið láta hvaða tölu sem er í staðinn fyrir 4 ( ég mæli með að ekki velja stærri en 10 samt). Næst skulum við draga show icon kubb þangað og velja mynd. Svo clear screen og pause. Skrifið 200 inn í pause. Þið finnið pasue með því að ýta á basic og svo more undir basic.
+
+![](img/image69.png?raw=true)
+
+Látið svo show string undir græna kubbinn og breytið hello í aftur. Síðan köllum við á byrjun. Alveg eins og við gerðum í tap kubbnum.
+
+![](img/image70.png?raw=true)
+
+## &lt; BætaVið />
+
+Núna getum við gert bætaVið functionið okkar. Þar viljum við byrja á að athuga hvort að umferðin sé jafn og 5. Ef svo er köllum við á sigur, annars bætum við 2 stökum í Runa og spilum rununa aftur. Við getum sett þetta upp sem:                 
+ef umferð= 5 þá sigur annars eitthvað annað. Þanng byrjum á að draga if then else kubb inn í functionið.
+
+![](img/image41.png?raw=true)
+
+Við viljum athuga hvort að umferð sé jafn og 5. Látum því 0=0 kubb inn í stðainn fyrir true.
+
+![](img/image71.png?raw=true)
+
+Drögum svo variable kubbinn umferð í staðinn fyrir fyrsta 0 og breytum hitt 0 í 5.
+
+![](img/image72.png?raw=true)
+
+Ef umferð er sama sem 5 þá viljum við kalla á sigur functionið. Drögum því call function sigur fyrir aftan then.
+
+![](img/image73.png?raw=true)
+![](img/image74.png?raw=true)
+
+Ef umferð er ekki sama sem 5 þá viljum við hækka umferð um einn því við erum að fara að byrja næstu umferð. Drögum “change item by 1” kubb
+![](img/image75.png?raw=true)
+og látum hann efst í else. Breytum svo item í umferð
+
+![](img/image76.png?raw=true)
+
+Þar sem við viljum að notandinn ýti á alla takkann aftur þurfum við að núllstilla notendaRuna, eins og við gerum í byrjum Gerum því alveg eins og þar og höfum set notendaRuna to create empty array kubb á eftir change umferð kubbnum.
+
+![](img/image77.png?raw=true)
+
+Núna þurfum við bara að bæta við tveim nýjum gildum í Runa. Við búum til nýtt gildi með afHandahófi functioninu okkar þannig við þurfum að kalla á það og svo bæta NæstaStak tölunni okkar aftast við Runa. Við gerum mjög svipað í Byrjun functioninu. Byrjum á að fara í Loops og velja repeat 4 times do kubbinn.
+
+![](img/image26.png?raw=true)
+
+Breytið 4 í 2 og látið call function afHandahófi kubb á eftir do.
+
+![](img/image78.png?raw=true)
+
+Loks förum við í Arrays og veljum list add value to end kubbinn
+
+![](img/image79.png?raw=true)
+
+ og látum hann fyrir neðan call function AfHandahófi. Breytið list í Runa og látið næstaStak variable í tóm reitinn. Þið finnið NæstaStak í variables. Núna þurfum við að spila rununa aftur þannig kallið á SpilaRunu functionið neðst. Þá er þetta function tilbúið.
+
+ ![](img/image80.png?raw=true)
+
+ Við viljum kalla á þetta function ef notandinn gerir rétt þannig bætið við call function bætaVið neðst í rétt kubbnum okkar
+
+![](img/image81.png?raw=true)
+
+## &lt; BeraSaman />
+
+Núna getum við loksins klára BeraSaman functionið. Ef notandinn gerði einhverja villu köllum við á tap annars köllum við á rétt. Skulum því búa til variable sem fylgist með hvort að notandinn sé búinn að gera rétt eða ekki. Skírum þessa breytu gerðirétt. Drögum svo set item to 0 kubb og látum hann efst í bera saman. Breytum item í gerðirétt og 0 í true. Þið finnið true í logic.
+
+![](img/image82.png?raw=true)
+![](img/image83.png?raw=true)
+
+Til eru breytur sem kallast boolean. Þær eru annað hvort true eða false ( satt eða ósatt). Þannig er gerðirétt true ef notandinn gerði allt rétt en við breytum henni í false ef hann gerði villu. Inn í græna kubbnum viljum við bera saman og athuga hvort að tölurnar eru eins. Ef þær eru ekki eins þá skulum við breyta gerðirétt í false.  Fyrst skulum við draga eina if then kubb inn í græna kubbinn.
+
+![](img/image84.png?raw=true)
+
+ Förum svo í logic og drögum 0=0 kubbinn og látum hann í staðinn fyrir true.
+
+![](img/image86.png?raw=true)
+
+Ýtið svo á örina við hliðin á = merkinu og veljið = með strik í gegnum sig.
+
+![](img/image85.png?raw=true)
+
+Næst þurfum við að breyta 0 báðu megin. Þar sem við erum að vinna með tvö fylki þurfum við að nota list get value at 0 kubbinn. Hann er í arrays.
+
+![](img/image88.png?raw=true)
+
+Látum þannig kubb í staðinn fyrir bæði núllin. Breytið svo fyrsta list í notendaRuna og seinna list í Runa. Loks breytið þið bæði núllin í j.
+
+![](img/image87.png?raw=true)
+
+Þetta athugar hvort að listarnir eru eins. Ef þeir eru ekki eins þá viljum við breyta geraRétt í false. Dragið því set item to kubb og látið fyrir aftan then. Breytið svo item í gerðirétt og 0 í false. False er á sama stað og true var. Núna þurfum við að gera If then else kubb þar sem við förum annað hvort í rétt eða tap functionið. Byrjið á að draga if then else kubb og láta hann neðst í BeraSaman functionið. Sá kubber er í logic. Næst farið þið í variables og finnið gerðirétt, dragið þann kubb og látið í staðinn fyrir true. Munið að gerðirétt er annað hvort true eða false ( satt eða ósatt) ef hann er satt þá gerum við það sem er í then en annnars það sem er í else. Ef gerðirétt er true þá gerði notandinn alveg rétt. Þá viljum við fara í rétt. Farið í functions og dragið call function rétt og látið fyrir aftan then. Látið svo call function tap í else.
+
+![](img/image89.png?raw=true)
+
+## &lt; Takkar 2 />
+
+Núna erum við næstum búin. Við viljum kalla á beraSaman um leið og notandinn er búinn að ýta nógu oft á takkanna. Sem sagt í fyrstu umferð er það 4 sinnum, í umferð 2 er það sex sinnum o.s.fr. Besti staðurinn til að athuga hvort að notandinn sé búinn að ýta nægilega oft er í tökkunum. Við þurfum því að bæta við if then kubb í öllum tökkunum hjá okkur. Ég ætla að sýna hvernig það gerið það fyrir A takkann. Þið gerið svo alveg eins fyrir B og AB. Byrjið á að draga if then kubb og láta hann neðst í on Button A pressed.
+
+![](img/image90.png?raw=true)
+
+Næst farið þið í logic og dragið 0=0 kubb og látið hann í staðinn fyrir true. Svo farið þið í arrays og dragið length of array og látið í staðinn fyrir bæði núllin. Svo loks farið þið í variables og dragið Runa fyrir aftan fremri length of array og notendaruna fyrir aftan hinn.
+
+![](img/image91.png?raw=true)
+
+Fyrir aftan then dragið þið call function beraSaman.
+
+![](img/image92.png?raw=true)
+
+Gerið alveg eins fyrir hina tvo takkanna.
+
+![](img/image93.png?raw=true)
+
+## &lt; Endir />
+
+Eins og er þá getur notandinn ýtt á takkanna á meðan runnan er ennþá að spilast. Þetta getur valdið vandræðum þannig við skulum laga það. Við skulum gera takkanna óvirka á meðan runnan er að spilast. Við gerum þetta með því að hafa boolean gildi sem fylgist með. Búið til nýtt variable sem heitir spila. Látið einn set item as kubb í byrjun functionið.
+Látið "spila" inn í fyrsta reitin og false inn í hinn.  
+
+![](img/image94.png?raw=true)
+
+Bætið svo við if then kubb inn í alla takkanna og látið það sem var fyrir inn í tökkunum fyrir aftan then. Látið svo spila variable í staðinn fyrir true all staðar.
+
+![](img/image95.png?raw=true)
+
+ Loks viljum við breyta spila í true um leið og spilaRuna er búið að klára. Látið því set item to kubb neðst í spila runa og látið svo spila í staðinn fyrir item og true í staðinn fyrir 0.
+
+![](img/image96.png?raw=true)
+
+Til hamingju núna er leikurinn tilbúinn.
+
+Eitt auka sem þú gætir reynt við sjálfur væri að sýna einhvern veginn hvaða umferð er. Ef þú vilt prófa það mæli ég með að nota umferð breytuna og kveikja ljós efst á skjánum til að sýna hvað umferð er í gangi
